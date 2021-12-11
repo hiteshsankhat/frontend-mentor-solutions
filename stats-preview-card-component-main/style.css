@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Inter", "Lexend Deca", sans-serif;
+  background-color: #090b1a;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+}
+
+main {
+  margin: auto;
+  max-width: 300px;
+}
+
+main .container {
+  border-radius: 1rem;
+  background-color: #1b1938;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main .container section {
+  padding: 1rem 2rem;
+}
+
+main .container .image {
+  position: relative;
+  border-radius: 1rem 1rem 0 0;
+}
+
+main .container .image img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+main .container .image .purple-bg {
+  position: absolute;
+  border-radius: 1rem 1rem 0 0;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 1px);
+  background-color: rgba(170, 92, 219, 0.55);
+}
+
+main .container .card-heading {
+  color: white;
+  margin: 1rem;
+  padding: 0 0.3em;
+}
+
+main .container .card-heading .insight {
+  color: #aa5cdb;
+}
+
+main .container .desc {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+}
+
+main .container .accomplishment {
+  padding: 1.5rem 0 1rem;
+}
+
+main .container .accomplishment div {
+  margin-bottom: 1rem;
+}
+
+main .container .accomplishment .no-header {
+  color: white;
+}
+
+main .container .accomplishment .no-para {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 700px) {
+  main {
+    min-width: 700px;
+    max-width: 750px;
+  }
+  main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    text-align: left;
+  }
+  main .container .image img {
+    height: calc(100% - 2px);
+    border-radius: 0 1rem 1rem 0;
+  }
+  main .container .image .purple-bg {
+    border-radius: 0 1rem 1rem 0;
+  }
+  main .container .accomplishment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0;
+  }
+  main .container section {
+    width: 600px;
+  }
+  main .container section .card-heading {
+    margin: 0;
+    padding: 0;
+  }
+  main .container section .desc {
+    padding: 1rem 0;
+  }
+}
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

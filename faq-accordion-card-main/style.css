@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  padding-top: 5rem;
+}
+
+main .container {
+  max-width: 450px;
+  width: 70vw;
+  background-color: white;
+  border-radius: 1.2rem;
+  padding: 0 2rem;
+  margin-bottom: 10px;
+}
+
+main .container .image {
+  margin: 0 auto;
+  position: relative;
+}
+
+main .container .image .bg-image {
+  width: 100%;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+main .container .image .main-image {
+  width: 100%;
+  position: absolute;
+  -webkit-transform: translate(-100%, -60%);
+          transform: translate(-100%, -60%);
+}
+
+main .container .image .bg-image-desktop {
+  display: none;
+}
+
+main .container .image .main-image-desktop {
+  display: none;
+}
+
+main .container .image .box {
+  display: none;
+}
+
+main .container .all-faq {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+main .container .all-faq .heading {
+  padding: 1.2rem 0;
+  font-weight: 700;
+}
+
+main .container .all-faq .question-answer {
+  text-align: left;
+  padding: 0.8rem 0;
+  border-bottom: 2px solid #e7e7e9;
+  position: relative;
+}
+
+main .container .all-faq .question-answer .question {
+  width: 95%;
+}
+
+main .container .all-faq .question-answer .question .arrow {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+
+main .container .all-faq .answer {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 50vw;
+    padding-left: 0;
+  }
+  main .container .all-faq {
+    -webkit-box-flex: 0.7;
+        -ms-flex-positive: 0.7;
+            flex-grow: 0.7;
+    text-align: left;
+  }
+  main .container .image {
+    width: 40%;
+    -webkit-box-flex: 0.3;
+        -ms-flex-positive: 0.3;
+            flex-grow: 0.3;
+    margin-right: 30px;
+  }
+  main .container .image .bg-image {
+    display: none;
+  }
+  main .container .image .main-image {
+    display: none;
+  }
+  main .container .image .bg-image-desktop {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -1rem;
+    left: -2rem;
+  }
+  main .container .image .main-image-desktop {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    left: -2rem;
+  }
+  main .container .image .box {
+    display: block;
+    position: absolute;
+    width: 50%;
+    bottom: 2.5rem;
+    left: -4.3rem;
+    z-index: 3;
+  }
+  main .attribution {
+    display: block;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+  color: white;
+}
+
+.attribution a {
+  color: #f47c57;
+}
+/*# sourceMappingURL=style.css.map */

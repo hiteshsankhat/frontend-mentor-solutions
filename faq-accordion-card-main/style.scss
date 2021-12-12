@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+// primary text
+$veryDarkDeSaturatedBlue: hsl(238, 29%, 16%);
+$softRed: hsl(14, 88%, 65%);
+// primary gradient
+$softViolet: hsl(273, 75%, 66%);
+$softBlue: hsl(240, 73%, 65%);
+// Neutral Text
+$veryDarkGrayishBlue: hsl(237, 12%, 33%);
+$darkGrayishBlue: hsl(240, 6%, 50%);
+// dividers
+$lightGrayishBlue: hsl(240, 5%, 91%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient($softViolet, $softBlue);
+  // background-color: $softViolet;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding-top: 5rem;
+  .container {
+    max-width: 450px;
+    width: 70vw;
+    background-color: white;
+    border-radius: 1.2rem;
+    padding: 0 2rem;
+    margin-bottom: 10px;
+    .image {
+      margin: 0 auto;
+      position: relative;
+      .bg-image {
+        width: 100%;
+        transform: translateY(-10%);
+      }
+      .main-image {
+        width: 100%;
+        position: absolute;
+        transform: translate(-100%, -60%);
+      }
+      .bg-image-desktop {
+        display: none;
+      }
+      .main-image-desktop {
+        display: none;
+      }
+      .box {
+        display: none;
+      }
+    }
+    .all-faq {
+      text-align: center;
+      padding-bottom: 2rem;
+      .heading {
+        padding: 1.2rem 0;
+        font-weight: 700;
+      }
+      .question-answer {
+        text-align: left;
+        padding: 0.8rem 0;
+        border-bottom: 2px solid $lightGrayishBlue;
+        position: relative;
+        .question {
+          width: 95%;
+          .arrow {
+            position: absolute;
+            right: 0;
+            top: 1rem;
+          }
+        }
+      }
+
+      .answer {
+        display: none;
+      }
+    }
+  }
+  @media (min-width: 600px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      max-width: 50vw;
+      padding-left: 0;
+      .all-faq {
+        flex-grow: 0.7;
+        text-align: left;
+      }
+      .image {
+        width: 40%;
+        flex-grow: 0.3;
+        margin-right: 30px;
+        .bg-image {
+          display: none;
+        }
+        .main-image {
+          display: none;
+        }
+        .bg-image-desktop {
+          display: block;
+          width: 100%;
+          position: absolute;
+          bottom: -1rem;
+          left: -2rem;
+        }
+        .main-image-desktop {
+          display: block;
+          width: 100%;
+          position: absolute;
+          bottom: 10%;
+          left: -2rem;
+        }
+        .box {
+          display: block;
+          position: absolute;
+          width: 50%;
+          bottom: 2.5rem;
+          left: -4.3rem;
+          z-index: 3;
+        }
+      }
+    }
+    .attribution {
+      display: block;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+  color: white;
+  a {
+    color: hsl(14, 88%, 65%);
+  }
+}
